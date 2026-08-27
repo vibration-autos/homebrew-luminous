@@ -9,6 +9,24 @@ brew tap vibration-autos/luminous
 brew install lum
 ```
 
+## Troubleshooting
+
+### Trust Error
+
+If you see:
+```
+Error: Refusing to load formula vibration-autos/luminous/lum from untrusted tap vibration-autos/luminous.
+```
+
+Run one of these commands:
+```bash
+# Trust just the formula
+brew trust --formula vibration-autos/luminous/lum
+
+# Or trust the entire tap
+brew trust vibration-autos/luminous
+```
+
 ## Update
 
 ```bash
